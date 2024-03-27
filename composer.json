@@ -14,7 +14,6 @@
 		"ezyang/htmlpurifier": "^4.17",
 		"greenlion/php-sql-parser": "^4.6",
 		"guzzlehttp/guzzle": "^7.8",
-		"illuminate/collections": "^9",
 		"leafo/lessphp": "^0.5",
 		"michelf/php-markdown": "^2.0",
 		"mustangostang/spyc": "^0.6.3",
