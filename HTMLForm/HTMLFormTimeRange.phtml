@@ -1,0 +1,17 @@
+<?php
+/** @var $this HTMLFormTimeRange */
+?>
+<input
+	name="<?= $this->fullName ?>"
+	id="<?= $this->form->getName($this->field, '', true) ?>"
+	value="<?= $this->start->getTime('H:i') ?>-<?= $this->end->getTime('H:i') ?>"
+	style="width: 7em;">
+<div id="slider-range-<?= $this->div ?>"
+		 class="time-scale"
+		 field="<?= $this->fieldEscaped ?>"
+		 min="<?= $this->min ?>"
+		 max="<?= $this->max ?>"
+		 start="<?= $this->start->getMinutes() ?>"
+		 end="<?= $this->end->getMinutes() ?>"
+		 step="<?= $this->step ?>"
+></div>

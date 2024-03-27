@@ -1,0 +1,36 @@
+div.debug {
+	color: black;
+	background: #EEEEEE;
+	border: solid 1px silver;
+	display: inline-block;
+	font-size: 12px;
+	font-family: verdana, sans-serif;
+	vertical-align: top;
+}
+
+div.debug a {
+	color: black;
+}
+
+div.debug .caption {
+	background-color: #EEEEEE;
+}
+
+table.view_array {
+	margin: 0.5em;
+	border-collapse: collapse;
+}
+
+table.view_array td,
+table.view_array th {
+	border: solid 1px silver;
+	font-size: 12px;
+	vertical-align: top;
+	color: black;
+	padding: 2px;
+}
+
+.debug_prop {
+	display: inline-block;
+	width: 5em;
+}

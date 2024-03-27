@@ -1,0 +1,87 @@
+.paginationControl {
+	margin-bottom: 1em;
+	margin-top: 1em;
+	display: block;
+}
+
+.paginationControl ul {
+	margin: 0;
+	white-space: nowrap;
+	display: inline-block;
+	vertical-align: top;
+	box-shadow: none;
+}
+
+.paginationControl ul li {
+	display: inline;
+	margin: 0;
+}
+
+.paginationControl .pageSize {
+	display: inline-block;
+}
+
+.paginationControl a,
+.paginationControl span.page,
+.paginationControl span.disabled,
+.paginationControl span.active {
+	border: 1px solid #DDDDDD;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-right: 3px;
+	padding: 0.15em 0.5em !important;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: baseline;
+	min-width: 15px;
+	color: black;
+	background: #EEEEEE;
+}
+
+.paginationControl span.disabled {
+	cursor: default;
+}
+
+.paginationControl span.active,
+.paginationControl a.active {
+	background: #72BDE5;
+	color: white;
+	border: solid 1px #72BDE5;
+}
+
+.paginationControl a:hover {
+	background: #DDDDDD;
+	color: black;
+	text-decoration: none;
+}
+
+.paginationControl a.active:hover {
+	background: #72BDE5;
+	color: white;
+	text-decoration: none;
+}
+
+.paginationControl form {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.paginationControl form input[type="text"] {
+	min-width: 3em;
+}
+
+.paginationControl div.page {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-top: 3px;
+	text-align: center;
+	margin-right: 3px;
+	padding: 0.25em;
+}
+
+.paginationControl form {
+	display: inline-block;
+}

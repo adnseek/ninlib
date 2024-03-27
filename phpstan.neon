@@ -1,0 +1,49 @@
+parameters:
+	reportUnmatchedIgnoredErrors: false
+	bootstrapFiles:
+	     - %currentWorkingDirectory%/init.php
+	excludePaths:
+		- %currentWorkingDirectory%/vendor
+		- %currentWorkingDirectory%/be\class\DB\AlterDB.php
+		- %currentWorkingDirectory%/be\class\DB\AlterIndex.php
+		- %currentWorkingDirectory%/be\class\DB\AlterIndex.php
+	ignoreErrors:
+		- '#Whoops\\Run#'
+		- '#Whoops\\Handler\\PrettyPageHandler#'
+		- '#YAMLLoad#'
+		- '#HTMLPurifier#'
+		- '#League\\Flysystem\\Filesystem#'
+		- '#League\\Flysystem\\Adapter\\NullAdapter#'
+		- '#PHPUnit\\Framework\\TestCase#'
+		- '#PHPSQLParser\\PHPSQLParser#'
+		- '#PhpSpec\\ObjectBehavior#'
+		- '#recaptcha_get_html#'
+		- '#recaptcha_check_answer#'
+		- '#AdvancedHtmlDom#'
+		- '#SendGrid\\Email#'
+		- '#SendGrid\\Content#'
+		- '#SendGrid\\Mail#'
+		- '#SendGrid\\Response#'
+		- '#Swift_Message#'
+		- '#Swift_SendmailTransport#'
+		- '#Swift_Mailer#'
+		- '#SimpleXLSX#'
+		- '#GuzzleHttp\\Client#'
+		- '#FirePHP#'
+		- '#mysql_#'
+		- '#MongoCollection#'
+		- '#Elastica#'
+		- '#ora_#'
+		- '#odbc_#'
+		- '#oci_#'
+		- '#t3lib_DB#'
+		- '#TYPO3\\CMS\\Core\\Database\\DatabaseConnection#'
+		- '#utf8_#'
+		- '#ae_arr#'
+		- '#Function htmLawed not found#'
+		- '#Instantiated class sxml not found#'
+		- '#Call to static method getInstance\(\) on an unknown class Config#'
+		- '#has invalid type Config#'
+		- '#Instantiated class Swift_NullTransport not found#'
+		- '#unknown class Swift_Attachment#'
+		- '#Instantiated class User not found#'

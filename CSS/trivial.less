@@ -1,0 +1,61 @@
+@import 'bootstrap';
+
+td {
+	vertical-align: top;
+}
+
+a:not([href]) {
+	color: inherit;
+}
+
+a:not([href]):hover {
+	text-decoration: none;
+}
+
+.innerScroll100 {
+	overflow: auto;
+	max-height: 100px;
+}
+
+.innerScroll300 {
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: 300px;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.hoverExpandTransition {
+	max-height: 2em;
+	overflow: hidden;
+	.transition('0.5s');
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	border: solid 1px transparent;
+	cursor: default;
+}
+
+.hoverExpandTransition:hover {
+	max-height: 100em;
+	overflow: visible;
+	.transition('0.5s');
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	/*border: solid 1px silver;*/
+}
+
+.crossed {
+	text-decoration: line-through;
+}
+
+.small {
+	font-size: small;
+}

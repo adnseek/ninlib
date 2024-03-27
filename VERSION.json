@@ -1,0 +1,34 @@
+{
+	"liveServer": "ors.nintendo.de",
+	"deployPath": "\/data001\/www\/virtual-hosts\/ors.nintendo.de\/public",
+	"composerCommand": "php ~\/composer.phar",
+	"remoteUser": null,
+	"id_rsa": null,
+	"repos": {
+		".": {
+			"path": ".",
+			"hash": "9eb19088ec2c",
+			"nr": "1464",
+			"tag": "tip",
+			"message": "- REMOVE \"current\" from HardwareGroup",
+			"date": null
+		},
+		"vendor\\spidgorny\\nadlib": {
+			"path": "vendor\\spidgorny\\nadlib",
+			"hash": "2851920128ad",
+			"nr": "2811",
+			"tag": "tip",
+			"message": "- 0003082: ORS - EPES area - Filters for \"Process Requests\" and \"Locked Requests\" are not being cached properly",
+			"date": null
+		},
+		"vendor\\AppDev\\DatacenterInventory": {
+			"path": "vendor\\AppDev\\DatacenterInventory",
+			"hash": "af834b61a3d8",
+			"nr": "967",
+			"tag": "tip",
+			"message": "- FIX double assigning of the HW to the same person",
+			"date": null
+		}
+	},
+	"verbose": true
+}

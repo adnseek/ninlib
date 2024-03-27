@@ -1,0 +1,104 @@
+{
+	"name": "spidgorny/nadlib",
+	"minimum-stability": "stable",
+	"config": {
+		"sort-packages": true
+	},
+	"require": {
+		"php": ">= 8",
+		"ext-pdo": "*",
+		"ext-pgsql": "*",
+		"ext-simplexml": "*",
+		"danielstjules/stringy": "^3.1",
+		"essence/essence": "^3.5",
+		"ezyang/htmlpurifier": "^4.17",
+		"greenlion/php-sql-parser": "^4.6",
+		"guzzlehttp/guzzle": "^7.8",
+		"illuminate/collections": "^9",
+		"leafo/lessphp": "^0.5",
+		"michelf/php-markdown": "^2.0",
+		"mustangostang/spyc": "^0.6.3",
+		"predis/predis": "^2.2",
+		"squizlabs/php_codesniffer": "^3.8"
+	},
+	"suggest": {
+		"mustangostang/spyc": "^0.6",
+		"league/flysystem": "^2.5",
+		"phpauth/phpauth": "^1.5",
+		"gnat/nc-cms": "dev-master",
+		"spidgorny/advanced-html-dom": "dev-master",
+		"htmlawed/htmlawed": "^1.2"
+	},
+	"require-dev": {
+		"league/flysystem-memory": "^3.23",
+		"php-parallel-lint/php-console-highlighter": "^1.0",
+		"php-parallel-lint/php-parallel-lint": "^1.3",
+		"phpspec/phpspec": "^7.5",
+		"phpstan/phpstan": "^1.10",
+		"phpunit/phpunit": "^10.5",
+		"roave/security-advisories": "dev-latest"
+	},
+	"scripts": {
+		"update-all": "@composer update -W && composer outdated",
+		"lint": "@php vendor/bin/parallel-lint . --exclude vendor",
+		"phpstan": "@php vendor/bin/phpstan analyze -l 1 --memory-limit 1G .",
+		"phpstan:2": "@php vendor/bin/phpstan analyze -l 2 --memory-limit 1G .",
+		"test": "@php vendor/bin/phpunit tests --bootstrap init.php"
+	},
+	"autoload": {
+		"classmap": [
+			"./",
+			"Base/",
+			"Cache/",
+			"Controller/",
+			"CSS/",
+			"Data/",
+			"DB/",
+			"Debug/",
+			"HTML/",
+			"HTMLForm/",
+			"HTTP/",
+			"LocalLang/",
+			"ORM/",
+			"SQL/",
+			"Queue/",
+			"Runner/",
+			"SQL/",
+			"Time/",
+			"User/"
+		],
+		"files": [
+			"init.php"
+		]
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "gnat/nc-cms",
+				"version": "master",
+				"source": {
+					"url": "https://github.com/gnat/nc-cms",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"version": "dev-master",
+				"name": "gerhobbelt/htmlawed",
+				"source": {
+					"url": "https://github.com/GerHobbelt/HTMLawed",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/spidgorny/advanced-html-dom"
+		}
+	]
+}

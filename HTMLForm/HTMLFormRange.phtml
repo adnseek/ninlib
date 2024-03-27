@@ -1,0 +1,18 @@
+<?php
+/** @var $this HTMLFormRange */
+?>
+<div class="HTMLFormRange">
+	<input
+		type="range"
+		min="<?= $this->min ?>"
+		max="<?= $this->max ?>"
+		step="<?= $this->step ?>"
+		name="<?= $this->fullName ?>"
+		id="<?= $this->form->getName($this->field, '', true) ?>"
+		value="<?= $this->value ?>"
+		style="width: 100%;"
+		oninput="outputUpdate(this)"
+		onchange="outputChanged(this)"
+	>
+	<output><?= $this->value ?></output>
+</div>

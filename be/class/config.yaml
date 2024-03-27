@@ -1,0 +1,19 @@
+---
+Controller:
+  log: false
+  useRouter: false
+View:
+  folder: ../be/template/
+FlexiTable:
+  doCheck: false
+LocalLang:
+  indicateUntranslated: false
+  editMode: false
+autoload:
+  notFoundException: false
+Config:
+  defaultController: HomeBE
+  timeLimit: 999
+BEUser:
+  acl:
+    Login: false

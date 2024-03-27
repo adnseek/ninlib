@@ -1,0 +1,62 @@
+/*
+http://stackoverflow.com/questions/16280040/css3-flexbox-display-box-vs-flexbox-vs-flex
+*/
+.display-box {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -o-box;
+	display: box;
+	display: flex;
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+	-moz-box-align: stretch;
+	box-align: stretch;
+}
+
+.display-box100 {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -o-box;
+	display: box;
+	display: flex;
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+	-moz-box-align: stretch;
+	box-align: stretch;
+	width: 100%;
+}
+
+.display-box > *,
+.flex-box {
+	width: 100%;
+	margin-left: 1em;
+	flex-grow: 1;
+}
+
+.display-box > *:first-child,
+.flex-box:first-child {
+	margin-left: 0;
+}
+
+.display-box.equal {
+	display: flex;
+}
+
+.flex-equal {
+	-webkit-flex-box: 1;
+	-moz-flex-box: 1;
+	-o-flex-box: 1;
+	box-flex: 1;
+	flex: 1;
+	width: 0;
+}

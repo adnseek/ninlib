@@ -1,0 +1,20 @@
+syntax: glob
+.svn
+\.orig\..*$
+\.orig$
+\.chg\..*$
+\.rej$
+\.conflict\~$
+bak/
+.idea
+vendor/
+be/cache/
+.hg_archival.txt
+*.orig
+components/
+docs/
+tests/reports/
+debugCookie/
+/VERSION
+.hg/
+.git-bare/

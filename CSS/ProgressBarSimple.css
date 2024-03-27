@@ -1,0 +1,35 @@
+.pb_container {
+	margin-top: 1em;
+	position: relative;
+	min-width: 10em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.pb_container * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.pb_bar {
+	height: 1.5em;
+	border: 1px solid silver;
+	background-color: #EEEEEE;
+}
+
+.pb_before {
+	float: left;
+	height: 100%;
+	background-color: #5387BA;
+}
+
+.pb_text {
+	padding-top: 0.1em;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: grey;
+}

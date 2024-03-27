@@ -1,0 +1,15 @@
+# http://www.zeilenwechsel.de/it/articles/8/Using-mod_rewrite-in-.htaccess-files-without-knowing-the-RewriteBase.html
+<IfModule mod_rewrite.c>
+	#Options -MultiViews
+	RewriteEngine On
+	RewriteCond  %{REQUEST_FILENAME}  !-f
+	RewriteCond  %{REQUEST_FILENAME}  !-l
+	RewriteCond  %{REQUEST_FILENAME}  !-d
+	RewriteCond $1#%{REQUEST_URI} ([^#]*)#(.*)\1$
+	RewriteRule ^(.*)$ %2index.php [QSA,L]
+</IfModule>
+
+#php_flag engine on
+#AddType application/x-httpd-php .php
+#AddHandler application/x-httpd-php .php
+#some comment to test deployment

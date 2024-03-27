@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.red {
+	background: lightpink !important;
+}
+
+.green {
+	background: lightgreen !important;
+}
+
+.be {
+	background: lightgrey !important;
+}
+
+.fe {
+	background: lightblue !important;
+}
+
+td.tdlabel {
+	vertical-align: top;
+}
+
+.pageSize {
+	display: inline-block;
+	float: right;
+}
+
+form.anyPageForm {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+form.anyPageForm input {
+	margin-bottom: 0;
+}
+
+.list-group-item {
+	padding: 0;
+}
+
+.nav > li.active {
+	background: #428bca;
+}
+
+.sidebar .nav > li > a {
+	/*padding: 0*/
+}
+
+.nav > li > a.act {
+	color: white;
+}
+
+.nav > li > a.act:hover,
+.nav > li > a.act:focus {
+	background-color: inherit;
+}
+
+.navbar-form {
+	/*margin: 0;*/
+	padding: 0;
+	width: 400px;
+}
+
+.navbar-form .form-control {
+	width: 100%;
+}
+
+.navbar-form a.btn {
+	/*margin: 6px 12px;*/
+}
+
+.navbar-form p.navbar-text {
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+.htmlFormTable {
+	width: 100%;
+}
+
+/* for phpunit report */
+html body {
+	padding-top: 60px;
+}

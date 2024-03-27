@@ -1,0 +1,46 @@
+<div class="floatTimeContainer noprint">
+	<div class="floatTime">
+		<table>
+			<tr>
+				<td>PHP+DB:</td>
+				<td id="total"><?= $totalTime ?>s</td>
+				<td><?= $totalBar ?></td>
+				<td id="totalMax"><?= $totalMax ?>s</td>
+			</tr>
+			<tr>
+				<td>DB:</td>
+				<td><?= $dbTime ?>s</td>
+				<td><?= $dbBar ?></td>
+				<td><?= $dbMax ?></td>
+			</tr>
+			<tr>
+				<td>Mem:</td>
+				<td><?= $peakMem ?>MB</td>
+				<td><?= $memBar ?></td>
+				<td><?= ini_get('memory_limit') ?></td>
+			</tr>
+			<tr>
+				<td>Total:</td>
+				<td><?= $totalTime ?>s</td>
+				<td>
+					<div id="page_load_time_bar">
+						<div></div>
+					</div>
+				</td>
+				<td id="page_load_time"></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div style="clear:both"></div>
+<script>
+	var now = new Date().getTime();
+	var page_load_time = now - performance.timing.navigationStart;
+	page_load_time = (page_load_time / 1000).toFixed(3);
+	//console.log("User-perceived page loading time: " + page_load_time);
+	document.querySelector("#page_load_time").innerHTML = page_load_time;
+	var total = parseFloat(document.querySelector("#total").innerHTML);
+	var width = Math.round(total / page_load_time * 100);
+	//console.log(total, page_load_time, width);
+	document.querySelector("#page_load_time_bar div").style.width = width + "%";
+</script>

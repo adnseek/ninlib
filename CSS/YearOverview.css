@@ -1,0 +1,7 @@
+table.YearOverview tr td {
+	min-width: 20px;
+	min-height: 20px;
+	background: #eeeeee;
+	margin: 1px;
+	text-align: center;
+}
