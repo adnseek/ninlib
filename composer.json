@@ -1,5 +1,5 @@
 {
-	"name": "spidgorny/nadlib",
+	"name": "adnseek/ninlib",
 	"minimum-stability": "stable",
 	"config": {
 		"sort-packages": true
